@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+
+    padding: 20px;
+}
+
+.btn {
+    align-self: flex-start;
+    padding: 20px 15px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3b434b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #6e747a;
+}
+
+#container {
+    background-color: #fff;
+    width: 60%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section .left {
+    width: 40%;
+}
+
+.section .right {
+    width: 60%;
+}
+
+.section h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section dl {
+    margin: 0;
+}
+
+.section dt {
+    font-weight: bold;
+}
+
+.section dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.section table {
+    width: 100%;
+}
+
+.section table td {
+    padding: 5px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
