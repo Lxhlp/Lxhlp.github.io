@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(150deg, #2F3A56 0%, #406d96 20%, #A8D0DA 60%, #D8E8E8 100%);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 60px;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 12px;
+    border-style: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #83A4B6;
+}
+
+.box-container {
+    margin-left: 200px;
+}
+
+h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    align-items: center;
+    color: #F6EFED;
+}
+
+.color-button {
+    width: 180px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 12px;
+    border-style: none;
+    box-shadow: 0 5px 10px #2F3A56 inset;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: black 0 0 4px;
+    color: #F6EFED;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: large;
+}
+
+.color-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 10px #2F3A56;
+}
+
+#purple-btn { background-color: purple; }
+#pink-btn { background-color: pink; }
+#red-btn { background-color: rgb(208, 26, 26); }
+#green-btn { background-color: green; }
+#yellow-btn { background-color: rgb(239, 239, 22); }
+#orange-btn { background-color: orange; }
+#blue-btn { background-color: rgb(23, 23, 156); }
+
+#purple-box { border-color: purple; }
+#pink-box { border-color: pink; }
+#red-box { border-color: rgb(208, 26, 26); }
+#green-box { border-color: green; }
+#yellow-box { border-color: rgb(239, 239, 22); }
+#orange-box { border-color: orange; }
+#blue-box { border-color: rgb(23, 23, 156); }
+
+.color-box {
+    width: 410px;
+    height: 410px;
+    border-radius: 12px;
+    position: absolute;
+    top: -600px;
+    transition: top 1.5s ease-in-out, opacity 1.3s ease-in-out;
+    border: 6px solid transparent;
+}
+
+.color-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1.5s ease;
+    opacity: 0;
+    z-index: -1;
+}
