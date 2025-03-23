@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridien Restaurant Guide</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-section">
+            <div>
+                <div class="header-section">
+                    <h3>Best of Meridien</h3>
+                </div>
+                <h1>RESTAURANT GUIDE</h1>
+                <p>Produced By: Alessandra Hulip</p>
+            </div>
+            <button class="main-menu-btn" onclick="hideOverlay()">Main Menu</button>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu-section" class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('GABEL LOFFEL')">
+                    <div class="card-header">
+                        <h4>GABEL LOFFEL</h4>
+                    </div>
+                    <img src="food1.jpg" alt="Gabel Loffel">
+                    <div class="restaurant-description">
+                        <p>Get out your <br> Lederhosen!</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('GARY GARI')">
+                    <div class="card-header">
+                        <h4>GARY GARI</h4>
+                    </div>
+                    <img src="food2.jpg" alt="Gary Gari">
+                    <div class="restaurant-description">
+                        <p>The delicious <br> headquarters for all your ginger related needs!</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('IL PIATTO')">
+                    <div class="card-header">
+                        <h4>IL PIATTO</h4>
+                    </div>
+                    <img src="food3.jpg" alt="Il Piatto">
+                    <div class="restaurant-description">
+                        <p>Got wild finicky kids? <br> Head for Il Piatto for kid-friendly Italian Fun</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('PIERRE PLATTERS')">
+                    <div class="card-header">
+                        <h4>PIERRE PLATTERS</h4>
+                    </div>
+                    <img src="food4.jpg" alt="Pierre Platters">
+                    <div class="restaurant-description">
+                        <p>Smart talks. <br> Smart eats!</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Card Information -->
+        <div id="overlay" class="overlay">
+            <div class="details-container">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4" style="display: flex;">
+                            <div class="card-vertical-title">
+                                <h3 id="detail-title">GABEL LOFFEL</h3>
+                            </div>
+                            <img id="detail-image" src="food1.jpg" class="card-img card-img-left" alt="Gabel Loffel Dish">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 id="detail-name" class="card-title">GABEL LOFFEL</h2>
+                                <div class="card-details">
+                                    <div>
+                                        <p id="detail-address">235 GELNDALE AVE.</p>
+                                        <p id="detail-city">MERIDIEN CITY</p>
+                                        <p id="detail-phone">T: 490 49 400</p>
+                                        <p id="detail-website">W: GANDG.RES</p>
+                                    </div>
+                                    <div>
+                                        <p id="detail-category">CATEGORY: SWISS</p>
+                                        <p id="detail-hours">OPEN: 10AM - 10PM</p>
+                                        <p id="detail-price">PRICE: $$$</p>
+                                    </div>
+                                </div>
+                                <p id="detail-description" class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum ad quia id fugiat ea quas similique saepe. Eligendi porro voluptatem nulla autem dolorum doloremque harum? Quod commodi dolor cupiditate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus illo laborum quos illum incidunt natus commodi ut unde maiores cum, et inventore enim! Natus, ducimus dolores. Ut, pariatur quo!</p>
+                                <p id="detail-description" class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In asperiores quo deserunt maiores, qui iste aspernatur. Ex dignissimos voluptate, laborum molestias maiores earum quis ratione molestiae suscipit tempora doloribus repellat?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html
