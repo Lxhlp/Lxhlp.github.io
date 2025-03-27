@@ -61,7 +61,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Adjust restaurant description positioning */
 .restaurant-description {
     position: absolute;
     bottom: 0;
