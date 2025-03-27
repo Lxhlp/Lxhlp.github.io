@@ -1,9 +1,7 @@
- // Function to show the overlay with detailed information
- function showOverlay(restaurantName) {
+function showOverlay(restaurantName) {
     const overlay = document.getElementById('overlay');
-    overlay.style.display = 'flex'; // Show the overlay
+    overlay.style.display = 'flex'; 
 
-    // Update the content based on the restaurant name
     if (restaurantName === 'YABU') {
         document.getElementById('detail-title').innerText = 'YABU';
         document.getElementById('detail-name').innerText = 'YABU';
