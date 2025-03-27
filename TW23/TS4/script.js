@@ -56,7 +56,7 @@ function showOverlay(restaurantName) {
         document.getElementById('detail-description2').innerText = "Experiment with their diverse range of sauces, from mild to fiery, and enjoy the communal experience of cooking your own Korean feast. Dokki provides a fun, casual atmosphere perfect for groups and food adventurers.";
     }
 }
- // Function to hide the overlay
+
 function hideOverlay() {
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'none'; 
