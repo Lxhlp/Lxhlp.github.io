@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide by Hulip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-section">
+            <div>
+                <div class="header-section">
+                    <h3>Best of Cuisine</h3>
+                </div>
+                <h1>RESTAURANT GUIDE</h1>
+                <p>Produced By: Alessandra Hulip</p>
+            </div>
+            <button class="main-menu-btn" onclick="hideOverlay()">Main Menu</button>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu-section" class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('YABU')">
+                    <div class="card-header">
+                        <h4>YABU</h4>
+                    </div>
+                    <img src="food1.jpg" alt="YABU">
+                    <div class="restaurant-description">
+                        <p>Traditional Japanese dining experience, unlimited rice and miso soup.</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('DIN TAI FUNG')">
+                    <div class="card-header">
+                        <h4>DIN TAI FUNG</h4>
+                    </div>
+                    <img src="food2.png" alt="DIN TAI FUNG">
+                    <div class="restaurant-description">
+                        <p>Meticulously crafted dumplings, elegant dining atmosphere, impeccable service.</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('TONG YANG')">
+                    <div class="card-header">
+                        <h4>TONG YANG</h4>
+                    </div>
+                    <img src="food3.jpg" alt="TONG YANG">
+                    <div class="restaurant-description">
+                        <p>Bustling buffet, create-your-own meal, social dining.</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="restaurant-card" onclick="showOverlay('DOKKI')">
+                    <div class="card-header">
+                        <h4>DOKKI</h4>
+                    </div>
+                    <img src="food4.jpg" alt="DOKKI">
+                    <div class="restaurant-description">
+                        <p>DIY buffet, social dining, creating your own sauce.</p>
+                        <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Card Information -->
+        <div id="overlay" class="overlay">
+            <div class="details-container">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4" style="display: flex;">
+                            <div class="card-vertical-title">
+                                <h3 id="detail-title">YABU</h3>
+                            </div>
+                            <img id="detail-image" src="food1.jpg" class="card-img card-img-left" alt="YABU DISH">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 id="detail-name" class="card-title">YABU</h2>
+                                <div class="card-details">
+                                    <div>
+                                        <p id="detail-address">Robinsons Magnolia,</p>
+                                        <p id="detail-city">Quezon City</p>
+                                        <p id="detail-phone">T: 490 49 400</p>
+                                        <p id="detail-website">W: Katsu lovers</p>
+                                    </div>
+                                    <div>
+                                        <p id="detail-category">Category: Japanese Cuisine</p>
+                                        <p id="detail-hours">Open: 10AM - 10PM</p>
+                                        <p id="detail-price">Price: $$$</p>
+                                    </div>
+                                </div>
+                                <p id="detail-description1" class="text-justify">Experience the art of perfectly fried Katsu at Yabu. Known for their premium Kurobuta pork, meticulously breaded and fried to golden perfection, Yabu offers a unique Katsu experience.  Enjoy the interactive grinding of sesame seeds and their signature sauces for a truly memorable meal. A must-try for Katsu lovers!</p>
+                                <p id="detail-description2" class="text-justify">Savor the crispy, juicy goodness of Yabu's Katsu! This popular restaurant specializes in premium Katsu sets, featuring expertly breaded and deep-fried pork, chicken, and seafood. Enjoy the traditional Japanese dining experience with their flavorful sauces and unlimited rice and miso soup. A satisfying and delicious meal awaits!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html
